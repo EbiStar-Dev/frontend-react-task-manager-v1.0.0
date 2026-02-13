@@ -1,0 +1,47 @@
+body{
+    background-color: #e8e8e8;
+}
+.card {
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+}
+
+
+
+
+.content {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.message {
+  margin-top: 0.5rem;
+  color: #595b5f;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.t-ndone::before{
+    width: 16px;
+    background-color: #595b5f;
+    border-radius: 50%;
+}
+.t-progress::before{
+    width: 16px;
+    color: blue;
+    background-color: rgb(0, 121, 219);
+    border-radius: 50%;
+}
+.t-done::before{
+  color: green;
+    width: 16px;
+    background-color: rgb(0, 206, 0);
+    border-radius: 50%;
+}
+.btn-outline-dark{
+  border-radius: 50%;
+  padding: 1.5px 5px;
+}

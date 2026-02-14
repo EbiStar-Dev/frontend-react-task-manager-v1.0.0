@@ -1,5 +1,99 @@
+@font-face{
+  font-family: dana;
+  src: url(./Dana-Medium.woff2);
+  font-weight: normal;
+}
 body{
     background-color: #e8e8e8;
+    font-family: dana;
+}
+/* header */
+header{
+  background-color: #fff;
+  padding:16px;
+  border-radius: 16px;
+  margin: 30px auto;
+}
+.logo{
+  font-size: 25px;
+  margin: auto;
+  font-weight: bold;
+}
+.serach-Box{
+  width: 80%;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 16px;
+  background-color: #e8e8e8;
+}
+.serach-Box::placeholder{
+  color: #a7a7a7;
+}
+.serach-Box:focus-visible{
+  outline: none;
+}
+/* header - modal add task */
+/* overlay */
+.modal-overlay-custom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+/* modal content */
+.modal-content-custom {
+  position: relative;
+  background-color: #fff;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  outline: none;
+  z-index: 1060;
+  direction: rtl;
+  text-align: right;
+}
+
+
+
+/* هدر مودال */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* عنوان مودال */
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* دکمه افزودن اصلی */
+.btn-add-task {
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+/* footer */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-direction: row-reverse;
+}
+.btn-close{
+  margin: 0 !important;
 }
 .card {
   overflow: hidden;
@@ -9,9 +103,6 @@ body{
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   background-color: #fff;
 }
-
-
-
 
 .content {
   margin-top: 0.75rem;
@@ -41,7 +132,7 @@ body{
     background-color: rgb(0, 206, 0);
     border-radius: 50%;
 }
-.btn-outline-dark{
+.btn-outline-danger{
   border-radius: 50%;
-  padding: 1.5px 5px;
+  padding: 0px 4px;
 }

@@ -1,11 +1,13 @@
-import TaskList from "./components/TaskList";
+
 import { TaskProvider } from "./context/TaskContext";
+import { Dashboard } from "./pages/Dashboard";
 
 const App = () => {
+
   return (
     <TaskProvider>
-      <div className="container my-3">
-      <TaskList/>
+      <div className="container">
+      <Dashboard/>
     </div>
     </TaskProvider>
   );
